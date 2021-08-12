@@ -58,11 +58,13 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="#" class="nav-link">Главная</a></li>
+			  <!--
 	          <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
 	          <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
 	          <li class="nav-item"><a href="#" class="nav-link">Работы</a></li>
 	          <li class="nav-item"><a href="#" class="nav-link">Статьи</a></li>
 	          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+			  -->
 	        </ul>
 	      </div>
 	    </div>
@@ -369,7 +371,7 @@
         </div>
       </div>
     </section>
-
+<!--
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
@@ -424,6 +426,7 @@
         </div>
       </div>
     </section>
+-->
 
 		
 		<section class="ftco-section ftco-appointment">
@@ -495,6 +498,7 @@
               </ul>
             </div>
           </div>
+<!--
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Наши статьи</h2>
@@ -520,6 +524,7 @@
               </div>
             </div>
           </div>
+		-->
           <div class="col-md-2">
              <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Услуги</h2>
@@ -561,6 +566,43 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script type="text/javascript">document.oncontextmenu = function () {
+	return false;
+  };
+  document.onselectstart = function () {
+	if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password") {
+	  return false;
+	}
+	else {
+	  return true;
+	}
+  };
+  if (window.sidebar) {
+	document.onmousedown = function (e) {
+	  var obj = e.target;
+	  if (obj.tagName.toUpperCase() == 'SELECT'
+		|| obj.tagName.toUpperCase() == "INPUT"
+		|| obj.tagName.toUpperCase() == "TEXTAREA"
+		|| obj.tagName.toUpperCase() == "PASSWORD") {
+		return true;
+	  }
+	  else {
+		return false;
+	  }
+	};
+  }
+  document.ondragstart = function () {
+	return false;
+  };</script> <noscript>
+  <style>
+	.lazyload {
+	  display: none;
+	}
+  </style>
+</noscript>
+
 
 
   <script src="js/jquery.min.js"></script>
